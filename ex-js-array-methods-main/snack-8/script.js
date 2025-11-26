@@ -21,3 +21,11 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+const MarcoLanci = students.filter(studente => {
+  return (studente.class == "3C")
+}).map (studente => {
+  return studente.class
+});
+
+console.log(MarcoLanci);
